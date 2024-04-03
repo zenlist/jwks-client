@@ -3,8 +3,8 @@ name = "jwks-client"
 version = "0.2.0"
 authors = ["Jean-François Bilodeau <jfbilodeau@chronogears.com>"]
 edition = "2018"
-keywords = [ "jwt", "jwks", "jwk", "gcp" ]
-categories = [ "web-programming", "cryptography", "authentication" ]
+keywords = ["jwt", "jwks", "jwk", "gcp"]
+categories = ["web-programming", "cryptography", "authentication"]
 license = "MIT"
 homepage = "https://github.com/jfbilodeau/jwks-client"
 repository = "https://github.com/jfbilodeau/jwks-client"
@@ -15,12 +15,12 @@ readme = "README.md"
 
 [dependencies]
 base64 = "^0.11.0"
-reqwest = {version = "0.11.0", features = ["json"]}
-serde = {version = "1", features = ["derive"]}
-serde_json = "1"
-regex = "1"
-ring = "^0.16.0"
+reqwest = { version = "0.12.2", features = ["json"] }
+serde = { version = "1.0.197", features = ["derive"] }
+serde_json = "1.0.115"
+regex = "1.10.4"
+ring = "0.17.8"
 
 [dev-dependencies]
-tokio = {version = "1", features = ["macros", "rt-multi-thread"]}
-tokio-test = "0.4"
+tokio = { version = "1.37.0", features = ["macros", "rt-multi-thread"] }
+tokio-test = "0.4.4"
